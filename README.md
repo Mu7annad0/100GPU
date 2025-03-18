@@ -15,5 +15,7 @@ Implemented a basic matrix Addition kernel using CUDA to add two matrices.
 Implemented a RGB to Grayscale Conversion kernel using CUDA to convert an image from RGB to Grayscale format. 
 Read the first 2 sections from the third chapter of the PMPP Book.
 
-
-
+----
+### Day 4: Blur a RGB Image
+Implemented a Blur rgb image conversion kernel using CUDA.
+Read the section 3 from the PMPP Book, and also this [blog](https://michalpitr.substack.com/p/gpu-programming).
