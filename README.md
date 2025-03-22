@@ -9,3 +9,5 @@ This repository is a part of the 100 Days of GPU Challenge, a 100-day long chall
 | 4 | Blur a RGB Image | Implemented a Blur rgb image conversion kernel using CUDA. <br /> Read the section 3 from the PMPP Book, and also this [blog](https://michalpitr.substack.com/p/gpu-programming).|
 | 5 | Matrix Multiplication | Implemented a Matrix Multiplication kernel using CUDA.<br />  Finished chapter 3 of PMPP Book. |
 | 6 | Matrix Transpose | Implemented a Matrix Transpose kernel using CUDA. <br /> Started reading Chapter 4 and gained a comprehensive understanding of the architecture of modern CUDA-capable GPUs, including block scheduling, synchronization, and transparent scalability.|
+| 7 | Softmax | Implemnted Softmax Function with CUDA. |
+| 8 | ReLU | Implemented a ReLU kernel using CUDA. <br /> Finished Chapter 4. Gained an understanding of warp scheduling, latency tolerance, and control divergence. |
