@@ -11,3 +11,5 @@ This repository is a part of the 100 Days of GPU Challenge, a 100-day long chall
 | 6 | Matrix Transpose | Implemented a Matrix Transpose kernel using CUDA. <br /> Started reading Chapter 4 and gained a comprehensive understanding of the architecture of modern CUDA-capable GPUs, including block scheduling, synchronization, and transparent scalability.|
 | 7 | Softmax | Implemnted Softmax Function with CUDA. |
 | 8 | ReLU | Implemented a ReLU kernel using CUDA. <br /> Finished Chapter 4. Gained an understanding of warp scheduling, latency tolerance, and control divergence. |
+| 9 | Tiled Matrix Multiplication | Implemented Matrix Multiplication kernel using Shared Memory |
+| 10 | GeLU | Implemented GeLU Kernel using CUDA. <br />Finished Chapter 5 and get to know the different types of CUDA memory and how tiling helps reduce memory traffic.|
