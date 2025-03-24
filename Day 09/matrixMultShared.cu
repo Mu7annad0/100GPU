@@ -43,14 +43,14 @@ __global__ void matrixMultiSharedKernel(float* A, float* B, float* C, int M, int
 
         // out of bounds check
         // same row, different column for A
-        if (row < M && (offset + tx) < K)
-            a_smem[ty][tx] = A[row * K + offset + tx];
+        if (row < M && (offset + tx) < N)
+            a_smem[ty][tx] = A[row * N + offset + tx];
         else
             a_smem[ty][tx] = 0.f;
 
-        // different row, same column for B
-        if ((offset + ty) < K && col < N)
-            b_smem[ty][tx] = B[(offset + ty) * N + col];
+        // different row, same column for B (N×K)
+        if ((offset + ty) < N && col < K)
+            b_smem[ty][tx] = B[(offset + ty) * K + col];
         else
             b_smem[ty][tx] = 0.f;
         __syncthreads();
@@ -63,8 +63,8 @@ __global__ void matrixMultiSharedKernel(float* A, float* B, float* C, int M, int
     }
 
     // write the final output after looping over all tiles
-    if (row < M && col < N) {
-        C[row * N + col] = acc;
+    if (row < M && col < K) {
+        C[row * K + col] = acc;
     }
 }
 
