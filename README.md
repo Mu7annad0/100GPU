@@ -15,4 +15,4 @@ This repository is a part of the 100 Days of GPU Challenge, a 100-day long chall
 | 10 | GeLU | Implemented GeLU Kernel using CUDA. <br />Finished Chapter 5 and get to know the different types of CUDA memory and how tiling helps reduce memory traffic.|
 | 11 | Conv1D | Implemented 1D Convolution with shared memory. |
 | 12 | Online Softmax | Implemented Online Softmax. |
-| 13 | Softmax (Shared Memory) | Implemented Softmax with shared memory using CUDA. |
+| 13 | Softmax (Shared Memory) | Implemented Softmax with shared-memory using CUDA. |
