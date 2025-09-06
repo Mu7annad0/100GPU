@@ -37,7 +37,7 @@ In this chapter we implemented a matrix multiplication kernel that has each thre
 ```
 
 ## Exercise 2
-Amatrix-vectormultiplicationtakesaninputmatrixBandavectorCand produces one output vector A. Each element of the output vector A is the dot
+A matrix-vector multiplication takes an input matrix Band a vector Cand produces one output vector A. Each element of the output vector A is the dot
 product of one row of the input matrix B and C, that is, **A[i] = sum_over_j(B[i][j] * C[j])**.
 For simplicity we will handle only square matrices whose elements are single- precision floating-point numbers. Write a matrix-vector multiplication kernel and the host stub function that can be called with four parameters: pointer to the output matrix, pointer to the input matrix, pointer to the input vector, and the number of elements in each dimension. Use one thread to calculate an output vector element.
 
